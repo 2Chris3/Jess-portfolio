@@ -59,6 +59,14 @@ nav a {
     -webkit-text-fill-color: transparent;
 }
 
+.hero {
+    margin-bottom: 80px;
+    padding: 0 0 25px 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 50px;
+    position: relative;
+}
 .hero p {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -139,4 +147,10 @@ footer {
     to {
         filter: brightness(2);
     }
+}
+
+iframe {
+    position: absolute;
+    z-index: -2;
+    filter: brightness(60%);
 }
