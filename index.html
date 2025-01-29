@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
   <iframe src='https://my.spline.design/untitled-4116d117c51cd504ff8f867f15c7d651/' frameborder='0' width='100%' height='100%'></iframe>
 
   <div class="star_group">
@@ -18,14 +18,14 @@
   </div>
 
   <header class="container">
-    <h2>Portfolio 2D/3D</h2>
+    <h2>My portfolio</h2>
     <nav>
       <a href="#parcours">Parcours</a>
       <a href="#creations">Créations</a>
       <a href="#technologies">Technologies</a>
       <a href="#soft-skills">Soft Skills</a>
     </nav>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <button class="btn-night" onclick="toggleTheme()"><p class="moon">☽</p></button>
   </header>
 
   <main class="container">
@@ -37,18 +37,18 @@
     <section id="parcours">
       <h2>Mon Parcours</h2>
       <div class="grid">
-        <div class="card">Diplôme en Design et Animation 3D - 2020</div>
-        <div class="card">Stage chez XYZ Studio - 2021</div>
-        <div class="card">Freelance 2D/3D depuis 2022</div>
+        <div class="card">Bac STI2D - 2025</div>
+        <div class="card">Stage - 2024</div>
+        <div class="card">Brevet - 2019</div>
       </div>
     </section>
 
     <section id="creations">
       <h2>Mes Créations</h2>
       <div class="grid">
-        <div class="card"><img src="" alt="">Projet 1: Animation d'un personnage</div>
-        <div class="card"><img src="" alt="">Projet 2: Modélisation d'un décor futuriste</div>
-        <div class="card"><img src="" alt="">Projet 3: Concept Art 2D</div>
+        <div class="card"><img src="./assets/feu_de_camp.png" alt="">Projet 1: Scène d'un feu de camp</div>
+        <div class="card"><img src="./assets/proteine.png" alt="">Projet 2: Visuel pour marque de protéine</div>
+        <div class="card"><img src="./assets/building_neige" alt="">Projet 3: Building à Brooklyn 2D</div>
       </div>
     </section>
 
@@ -77,19 +77,7 @@
     <p>© 2025 - Mon Portfolio 2D/3D</p>
   </footer>
 
-  <script>
-    function toggleTheme() {
-      const root = document.documentElement;
-      if (root.style.getPropertyValue('--primary-color') === '#4a148c') {
-        root.style.setProperty('--primary-color', '#2196f3');
-        root.style.setProperty('--dark-bg', '#f5f5f5');
-        root.style.setProperty('--secondary-color', '#121212');
-      } else {
-        root.style.setProperty('--primary-color', '#4a148c');
-        root.style.setProperty('--dark-bg', '#121212');
-        root.style.setProperty('--secondary-color', '#f3e5f5');
-      }
-    }
+  <script src="./functions.js">
   </script>
 </body>
 </html>

@@ -8,6 +8,15 @@
     --dark-gradient: linear-gradient(145deg, #311b92, #512da8);
 }
 
+html {
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+
+* {
+    box-sizing: padding-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -30,14 +39,27 @@ header {
     padding: 1rem 0;
 }
 
-.theme-toggle {
-    background: var(--primary-color);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    padding: 0.5rem 1rem;
+.dark-theme * {
+    color: var(--light-bg);
+}
+
+button {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box !important;
     cursor: pointer;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    background: var(--light-gradient);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button > p {
+    position: relative;
+    color: white;
+    bottom: 30px;
 }
 
 nav a {
@@ -153,4 +175,8 @@ iframe {
     position: absolute;
     z-index: -2;
     filter: brightness(60%);
+}
+
+.card img {
+    width: 100%;
 }
