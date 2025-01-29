@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 2D/3D</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="star_group">
+    <img class="star" src="./assets/star.svg" alt="">
+    <img class="star" src="./assets/star.svg" alt="">
+    <img class="star" src="./assets/star.svg" alt="">
+    <img class="star" src="./assets/star.svg" alt="">
+  </div>
+
+  <header class="container">
+    <h2>Portfolio 2D/3D</h2>
+    <nav>
+      <a href="#parcours">Parcours</a>
+      <a href="#creations">Créations</a>
+      <a href="#technologies">Technologies</a>
+      <a href="#soft-skills">Soft Skills</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bienvenue dans mon univers</h1>
+      <p>Découvrez mes créations, mon parcours et mes compétences en modélisation 2D/3D.</p>
+    </section>
+
+    <section id="parcours">
+      <h2>Mon Parcours</h2>
+      <div class="grid">
+        <div class="card">Diplôme en Design et Animation 3D - 2020</div>
+        <div class="card">Stage chez XYZ Studio - 2021</div>
+        <div class="card">Freelance 2D/3D depuis 2022</div>
+      </div>
+    </section>
+
+    <section id="creations">
+      <h2>Mes Créations</h2>
+      <div class="grid">
+        <div class="card">Projet 1: Animation d'un personnage</div>
+        <div class="card">Projet 2: Modélisation d'un décor futuriste</div>
+        <div class="card">Projet 3: Concept Art 2D</div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies Maîtrisées</h2>
+      <div class="grid">
+        <div class="card">Blender</div>
+        <div class="card">Maya</div>
+        <div class="card">Photoshop</div>
+        <div class="card">Unity 3D</div>
+      </div>
+    </section>
+
+    <section id="soft-skills">
+      <h2>Soft Skills</h2>
+      <div class="grid">
+        <div class="card">Créativité</div>
+        <div class="card">Gestion de projet</div>
+        <div class="card">Travail en équipe</div>
+        <div class="card">Communication</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Mon Portfolio 2D/3D</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      if (root.style.getPropertyValue('--primary-color') === '#4a148c') {
+        root.style.setProperty('--primary-color', '#2196f3');
+        root.style.setProperty('--dark-bg', '#f5f5f5');
+        root.style.setProperty('--secondary-color', '#121212');
+      } else {
+        root.style.setProperty('--primary-color', '#4a148c');
+        root.style.setProperty('--dark-bg', '#121212');
+        root.style.setProperty('--secondary-color', '#f3e5f5');
+      }
+    }
+  </script>
+</body>
+</html>
+
