@@ -11,39 +11,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="dark-theme">
-  <iframe src='https://my.spline.design/untitled-4116d117c51cd504ff8f867f15c7d651/' frameborder='0' width='100%'
-    height='100%'></iframe>
 
-  <div class="star_group">
+<body class="dark-theme">
+  <video muted="true" autoplay loop="true" preload="none" class="ovni">
+    <source src="./assets/ovni.mp4" type="video/mp4">
+  </video>
+
+  <figure class="star_group">
     <img class="star" src="./assets/star.svg" alt="">
     <img class="star" src="./assets/star.svg" alt="">
     <img class="star" src="./assets/star.svg" alt="">
     <img class="star" src="./assets/star.svg" alt="">
     <img class="star" src="./assets/star.svg" alt="">
-  </div>
+  </figure>
 
   <header class="container">
-    <h2>My portfolio</h2>
+    <h2 class="not">My portfolio</h2>
     <nav>
       <a href="#parcours">Parcours</a>
       <a href="#creations">Créations</a>
       <a href="#technologies">Technologies</a>
       <a href="#soft-skills">Soft Skills</a>
     </nav>
-    <button class="btn-night" onclick="toggleTheme()">
-      <p class="moon">☽</p>
-    </button>
+    <button class="btn-night moon" onclick="toggleTheme()">☽</button>
   </header>
 
   <main class="container">
     <section class="hero">
-      <h1>Bienvenue dans mon univers</h1>
-      <p>Découvrez mes créations, mon parcours et mes compétences en modélisation 2D/3D.</p>
+      <div class="title-bg">
+        <h1>Bienvenue dans mon univers</h1>
+      </div>
+        <p>Découvrez mes créations, mon parcours et mes compétences en modélisation 2D/3D.</p>
     </section>
 
     <section id="parcours">
-      <h2>Mon Parcours</h2>
+      <h2 class="not">Mon Parcours</h2>
       <div class="grid">
         <div class="card">Bac STI2D - 2025</div>
         <div class="card">Stage - 2024</div>
@@ -57,7 +59,12 @@
       <div class="grid">
         <div class="card"><img src="./assets/feu_de_camp.png" alt="">Projet 1: Scène d'un feu de camp</div>
         <div class="card"><img src="./assets/room.png" alt="">Projet 2: maison cozy </div>
-        <div class="card"><img src="./assets/immeuble abandonner enaiger.mp4" alt="">Projet 3: immeuble en ruine </div>
+        <div class="card">
+          <video width="320" height="240" muted="true" autoplay loop="true" preload="none">
+            <source src="./assets/immeuble_en_ruine.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>Projet 3: immeuble en ruine
+        </div>
       </div>
       <h3>Objets</h3>
       <div class="grid">
@@ -66,14 +73,16 @@
         <div class="card"><img src="./assets/skeletton.png" alt="">Projet 6: endo-squelette</div>
       </div>
       <h3>Photos</h3>
-      <div class="grid">
-        <div class="card"><img src="./assets/photograohie nature.jpeg.png" alt="">Projet</div>
+      <div class="grid photos">
+        <div class="card"><img src="./assets/fleurs.jpg" alt="">Cliché 1</div>
+        <div class="card"><img src="./assets/photo_jardin_interieur.png" alt="">Cliché 2</div>
+        <div class="card"><img src="./assets/buisson.jpg" alt="">Cliché 3</div>
       </div>
       <h3>Dessin personnage</h3>
       <div class="grid">
-        <div class="card"><img src="./assets/v.png" alt="">Projet</div>
-        <div class="card"><img src="./assets/vegeta.png" alt="">Projet</div>
+        <div class="card"><img src="./assets/dessin_drone_v.png" alt="">Projet</div>
         <div class="card"><img src="./assets/samurai.png" alt="">Projet</div>
+        <div class="card"><img src="./assets/vegeta.png" alt="">Projet</div>
       </div>
     </section>
 

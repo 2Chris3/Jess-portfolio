@@ -8,25 +8,36 @@
     --dark-gradient: linear-gradient(145deg, #311b92, #512da8);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     transition: 2s;
 }
 
 * {
-    box-sizing: padding-box;
+    box-sizing: content-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0 80px 0 80px;
     padding: 0;
-    background: var(--dark-bg);
+    background-color: #12032d;
     color: var(--secondary-color);
     transition: background 0.5s, color 0.5s;
 }
 
-.container {
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 100px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -37,11 +48,23 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    
+}
+
+.ovni {
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    left: -80px;
 }
 
 .dark-theme * {
     color: var(--light-bg);
 }
+/* .img {
+    overflow: visible;
+    resize: both !important;
+} */
 
 button {
     font-size: 30px;
@@ -69,37 +92,50 @@ nav a {
     font-weight: 600;
 }
 
+
 .hero {
+    display: block;
     text-align: center;
-    padding: 4rem 0;
+    margin: 0;
+    padding: 0 0 25px 0;
+    border-radius: 20px;
 }
 
-.hero h1 {
+h1 {
     font-size: 3rem;
     background: var(--light-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
-.hero {
-    margin-bottom: 80px;
-    padding: 0 0 25px 0;
+.title-bg{
+    background-color: #f3e5f5;
     border-radius: 20px;
-    background-color: #ffffff;
-    height: 50px;
-    position: relative;
+}
+
+/* TEXT */
+/* titles */
+
+
+/* description */
+h2:not(.not) {
+    margin-top: 60px;
+}
+
+h3 {
+    margin-top: 40px;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-top: 1rem;
 }
 
 .card {
     background: var(--card-bg);
     border-radius: 1rem;
     padding: 2rem;
-    margin: 1rem 0;
+
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     transition: transform 0.3s;
@@ -107,6 +143,10 @@ nav a {
 
 .card:hover {
     transform: translateY(-10px);
+}
+
+.photos img {
+    height: 400px;
 }
 
 .grid {
@@ -183,6 +223,30 @@ footer {
     }
 }
 
+@-moz-keyframes twinkle {
+    from {
+        filter: brightness(1);
+        rotate: 0;
+    }
+
+    to {
+        filter: brightness(2);
+        rotate: 12deg;
+    }
+}
+
+@-webkit-keyframes twinkle {
+    from {
+        filter: brightness(1);
+        rotate: 0;
+    }
+
+    to {
+        filter: brightness(2);
+        rotate: 12deg;
+    }
+}
+
 iframe {
     position: absolute;
     z-index: -2;
@@ -193,7 +257,7 @@ iframe {
     width: 100%;
 }
 
-onsive Design */
+/*Responsive Design */
 
 @media (max-width: 1024px) {
     .container {
