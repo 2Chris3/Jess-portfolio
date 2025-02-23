@@ -37,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 100px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -123,6 +123,10 @@ h2:not(.not) {
     margin-top: 60px;
 }
 
+.not {
+    margin-top: 0;
+}
+
 h3 {
     margin-top: 40px;
 }
@@ -144,10 +148,16 @@ h3 {
 .card:hover {
     transform: translateY(-10px);
 }
-
-.photos img {
-    height: 400px;
+.filter {
+    position: absolute;
+    background: radial-gradient(ellipse at 45% 0%, #12032d 5%, transparent 70%);
+    filter: blur(40px);
+    width: 120vw;
+    height: 70vh;
+    left: -80px;
 }
+
+
 
 .grid {
     display: grid;
@@ -209,7 +219,26 @@ footer {
     left: 42%;
     scale: 2;
 }
-
+.star:nth-child(6) {
+    top: 286%;
+    left: -12%;
+    scale: 2.5;
+}
+.star:nth-child(7) {
+    top: 383%;
+    left: 62%;
+    scale: 1.2;
+}
+.star:nth-child(8) {
+    top: 400%;
+    left: 2%;
+    scale: 2.1;
+}
+.star:nth-child(9) {
+    top: 443%;
+    left: 12%;
+    scale: 2.9;
+}
 
 @keyframes twinkle {
     from {
