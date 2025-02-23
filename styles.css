@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     margin: 0 80px 0 80px;
     padding: 0;
