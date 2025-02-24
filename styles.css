@@ -28,7 +28,6 @@ body {
     width: 100vw;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    margin: 0 80px 0 80px;
     padding: 0;
     background-color: #12032d;
     color: var(--secondary-color);
